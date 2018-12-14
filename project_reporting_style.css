@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background-color: #336B87;
+    color: rgb(255, 255, 255);
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 80%;}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    color: rgb(255, 255, 255);
+    background-color: #2A3132;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.tableheaderevm{
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+table {
+  border-collapse: collapse;
+  width: 100%;}
+table, td, th {
+  text-align: center;
+  border: 1px solid black;}
+
+#table-1 th:first-child{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  height: 30px;
+  background-color: #763626;
+}
+
+#table-2 th{
+  font-size: 18px;
+  height: 25px
+  width: 400px;
+  color: rgb(0, 0, 0);
+  background-color: #90AFC5;
+}
+
+#table-3 th{
+  font-size: 18px;
+  height: 25px
+  width: 400px;
+  color: rgb(0, 0, 0);
+  background-color: #90AFC5;
+}
+
+#table-4 th{
+  font-size: 16px;
+  height: 25px
+  width: 400px;
+  color: rgb(0, 0, 0);
+  background-color: #90AFC5;
+}
+td{
+  font-size: 18px;
+  background-color: white;
+  width: 400px;
+}
+
+#p_one p{
+  font-size: 30px;
+  text-align: center;
+}
+
+#p_two p{
+  font-size: 15px;
+}
+
+#textcontainer p{
+  display: block;
+  float: left;
+}
+
+#align_left p{
+  float: left;
+}
+
+#align_right p{
+  flaot: right;
+}
+
+#project_phase {
+    box-sizing: border-box;
+    width: 300px;
+    height: 75px;
+    border: 3px solid black;
+    text-align: center;
+    background-color: rgb(240, 201, 15);
+    color: black;
+}
+
+#project_controlAccount {
+  box-sizing: border-box;
+  width: 250px;
+  height: 35px;
+  border: 3px solid black;
+  text-align: center;
+  background-color: rgb(0, 102, 204);
+  color: black;
+}

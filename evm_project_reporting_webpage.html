@@ -1,0 +1,189 @@
+<DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Project Report</title>
+    <link href="project_reporting_style.css" type = "text/css" rel = "stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Graduate Software Development Project</h1>
+    </div>
+
+    <div class="topnav">
+      <a href="#">Project Planning</a>
+      <a href="#">Project Requirements</a>
+      <a href="#">User Experience and User Interface Design</a>
+      <a href="#">Software Development</a>
+      <a href="#">Software Testing and Quality Assurance</a>
+      <a href="#">User Acceptance Testing</a>
+      <a href="#">Software Release</a>
+      <a href="#">#SLACK</a>
+      <a href="#">Pivotaltracker</a>
+      <a href="#">Github</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Software Development Life Cycle (SDLC)</h2>
+          <div class="fakeimg" style="height:auto;">
+            <img src = "Project Plan.jpg" class = "responsive">
+          </div>
+        </div>
+
+
+        <div class="card">
+          <h2>Project Summary</h2>
+          <table>
+          <tr id='table-1'>
+          <th colspan = "9">Project Eearned Value Metrics</th>
+          </tr>
+            <tr id='table-2'>
+              <th>Baseline Budget</th>
+              <th>BCWS</th>
+              <th>% Complete</th>
+              <th>BCWP</th>
+              <th>ACWP</th>
+              <th>SV</th>
+              <th>SPI</th>
+              <th>CV</th>
+              <th>CPI</th>
+            </tr>
+          <tr>
+            <td id='totalbudget'></td>
+            <td id='bcws'></td>
+            <td id='percentcom'></td>
+            <td id='bcwp'></td>
+            <td id='acwp'></td>
+            <td id='sv'></td>
+            <td id='spi'></td>
+            <td id='cv'></td>
+            <td id='cpi'></td>
+          </tr>
+        </table>
+        <p> </P>
+          <table>
+            <tr id='table-1'>
+              <th colspan="9">Project To-Complete</th></tr>
+            <tr id='table-3'>
+              <th>BAC</th>
+              <th>EAC</th>
+              <th>EAC (CPI)</th>
+              <th>EAC (Composite)</th>
+              <th>VAC</th>
+              <th>TCPI (BAC)</th>
+              <th>TCPI (EAC)</th>
+              <th>BCWR</th>
+              <th>ETC</th>
+            </tr>
+          <tr>
+            <td id='bac'></td>
+            <td id='eac_gen'></td>
+            <td id='EAC_CPI'></td>
+            <td id='EAC_Composite'></td>
+            <td id='vac'></td>
+            <td id='tcpi_bac'></td>
+            <td id='tcpi_eac'></td>
+            <td id='bcwr'></td>
+            <td id='etc'></td>
+          </tr>
+      </table>
+      <p> </p>
+      <table>
+        <tr id='table-1'>
+            <th colspan="9">Project Period Metrics</th>
+        </tr>
+        <tr id='table-4'>
+          <th>Period BCWS</th>
+          <th>Period % Complete</th>
+          <th>Period BCWP</th>
+          <th>Period ACWP</th>
+          <th>Period SV</th>
+          <th>Period SPI</th>
+          <th>Period CV</th>
+          <th>Period CPI</th>
+        </tr>
+        <tr>
+          <td id='perBCWS'></td>
+          <td id='period_percentcom'></td>
+          <td id='perBCWP'></td>
+          <td id='perACWP'></td>
+          <td id='perSV'></td>
+          <td id='perSPI'></td>
+          <td id='perCV'></td>
+          <td id='perCPI'></td>
+        </tr>
+      </table>
+    </div>
+
+        <div class="card">
+          <h2>Project To-Date</h2>
+          <h5>Project Lifecycle S-curve</h5>
+          <img src = "s-curve.png" class = "responsive">
+          <p>Python Cumulative Data Table Here</p>
+        </div>
+        <div class="card">
+          <h2>Period Earned Value Metrics</h2>
+          <img src = "bar-chart.png" class = "responsive">
+          <p>Period Earned Value Metrics</p>
+        </div>
+      </div>
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Overall Project Percent Complete</h2>
+        <div id="p_one">
+          <p>50%</p>
+        </div>
+        <h3>Percent Complete by Life Cycle Phase</h3>
+          <div id="p_two">
+            <p style="text-align: left;">Project Planning
+              <span style="float: right">100%</span></p>
+            <p style="text-align: left;">Requirements Engineering
+              <span style="float:right;">100%</span></p>
+            <p style="text-align: left;">Software Development
+              <span style="float: right;" id='reportingpercent'></span></p>
+            <p style="text-align: left:">Software Testing and Quality Assurance
+              <span style="float: right;">0%</span></p>
+            <p style="text-align: left;">Software Release
+              <span style="float: right;">0%</span></p>
+          </div>
+        </div>
+
+      <div class="card">
+        <div id="p_two">
+          <h2>Project Milestones</h2>
+          <p>Project Start</p>
+          <p>Project Approval</p>
+          <p>Requirements Engineering Complete</p>
+          <p>Software Development Complete</p>
+          <p>UAT Complete</p>
+          <p>Release/Project Finish</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Project Risk Tracking</h3>
+        <img src = "ERM_Risk_Matrix.jpg" class = "responsive">
+        </div>
+      <div class="card">
+        <h3>Control Account Manager</h3>
+        <div class="fakeimg"><p>Select CAM</p></div>
+        </div>
+      <div class="card">
+        <h3>Charge Code</h3>
+        <div class="fakeimg"><p>Select Charge Code</p></div>
+        </div>
+      </div>
+  </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+    <script type="text/javascript" src="cost_integrator_project_data.js"></script>
+    <script type="text/javascript" src="progress.js"></script>
+  </body>
+</html>
