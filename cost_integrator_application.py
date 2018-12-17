@@ -214,6 +214,11 @@ def data_Visualazation(cum_DataFrame, period_DataFrame, dateHeaderValues):
     cum_ACWP = cum_DataFrame.loc['Cumulative Total Cost', dateHeaderValues]
     cum_BCWS = cum_DataFrame.loc['Cumulative Planned Value', dateHeaderValues]
     
+    cum_EVMetrics = pd.concat([cum_BCWS, cum_BCWP, cum_ACWP], axis=1).to_dict()
+    with open('cum_EVMetrics.json', 'w') as outfile:
+        json.dump(cum_EVMetrics, outfile, sort_keys = True, indent = 4, ensure_ascii=False)
+    
+    
     plt.style.use('classic')
     
     fig, ax = plt.subplots()
@@ -231,6 +236,10 @@ def data_Visualazation(cum_DataFrame, period_DataFrame, dateHeaderValues):
     period_BCWP = period_DataFrame.loc['Period Total Planned', dateHeaderValues]
     period_BCWS = period_DataFrame.loc['Period Total Earned', dateHeaderValues]
     period_ACWP = period_DataFrame.loc['Period Total Cost', dateHeaderValues]
+    
+    period_EVMetrics = pd.concat([period_BCWS, period_BCWP, period_ACWP], axis=1).to_dict()
+    with open('period_EVMetrics.json', 'w') as outfile:
+        json.dump(period_EVMetrics, outfile, sort_keys = True, indent = 4, ensure_ascii=False)
 
     ind = np.arange(len(dateHeaderValues))
     width = 0.25
@@ -252,6 +261,8 @@ def data_Visualazation(cum_DataFrame, period_DataFrame, dateHeaderValues):
     plt.savefig('bar-chart.png', dpi = 100)
     plt.show()
         
+    return period_EVMetrics, cum_EVMetrics
+    
 def data_to_JSON(bac, bcwp, bcws, acwp, project_CPI, project_SPI, project_CV, 
                 project_SV, percent_complete, bcwr, eac_general, eac_CPI, eac_Composite, tcpi_BAC, tcpi_EAC, 
                 variance_at_complete, etc, cum_DataFrame, currentMonth_PercentComplete,
@@ -294,7 +305,7 @@ def data_to_JSON(bac, bcwp, bcws, acwp, project_CPI, project_SPI, project_CV,
     cum_todateUI_table["PerSV"] = currentMonth_SV
     cum_todateUI_table["PerCPI"] = currentMonth_CPI
     cum_todateUI_table["PerCV"] = currentMonth_CV
-    with open('cum_json.json', 'w') as outfile:
+    with open('reportingMetrics.json', 'w') as outfile:
         json.dump(cum_todateUI_table, outfile, sort_keys = True, indent = 4, ensure_ascii=False)
       
         
