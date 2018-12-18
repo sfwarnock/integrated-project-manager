@@ -1,61 +1,51 @@
-var _table_ = document.createElement('table'),
-    _tr_ = document.createElement('tr'),
-    _th_ = document.createElement('th'),
-    _td_ = document.createElement('td');
-
-function buildHtmlTable(arr) {
-    var table = _table_.cloneNode(false),
-        columns = addAllColumnHeaders(arr, table);
-    for (var i=0, maxi=arr.length; i < maxi; ++i) {
-        var tr = _tr_.cloneNode(false);
-        for (var j=0, maxj=columns.length; j < maxj ; ++j) {
-            var td = _td_.cloneNode(false);
-                cellValue = arr[i][columns[j]];
-              td.appendChild(document.createTextNode(arr[i][columns[j]] || ''));
-              tr.appendChild(td);
-        }
-        table.appendChild(tr);
+var cum_DataTable = {
+    "Cumulative Earned Value": {
+        "18-Apr": 79800.0,
+        "18-Aug": 195400.0,
+        "18-Jul": 178000.0,
+        "18-Jun": 136600.0,
+        "18-Mar": 37900.0,
+        "18-May": 106200.0
+    },
+    "Cumulative Planned Value": {
+        "18-Apr": 86800.0,
+        "18-Aug": 190400.0,
+        "18-Jul": 165000.0,
+        "18-Jun": 143600.0,
+        "18-Mar": 43400.0,
+        "18-May": 122200.0
+    },
+    "Cumulative Total Cost": {
+        "18-Apr": 122250.0,
+        "18-Aug": 240600.0,
+        "18-Jul": 224600.0,
+        "18-Jun": 187100.0,
+        "18-Mar": 13500.0,
+        "18-May": 166600.0
     }
-    return table;
 }
 
-function addAllColumnHeaders(arr, table)
-{
-    var columnSet = [],
-        tr = _tr_.cloneNode(false);
-    for (var i=0, l=arr.length; i < l; i++) {
-        for (var key in arr[i]) {
-            if (arr[i].hasOwnProperty(key) && columnSet.indexOf(key)===-1) {
-                columnSet.push(key);
-                var th = _th_.cloneNode(false);
-                th.appendChild(document.createTextNode(key));
-                tr.appendChild(th);
-            }
-        }
-    }
-    table.appendChild(tr);
-    return columnSet;
+function addHeaders(table, keys) {
+  var row = table.insertRow();
+  for( var i = 0; i < keys.length; i++ ) {
+    var cell = row.insertCell();
+    cell.appendChild(document.createTextNode(keys[i]));
+  }
 }
 
+var table = document.createElement('table');
+for( var i = 0; i < children.length; i++ ) {
 
-function loadData(cum_DataTable){
-
+  var child = cum_DataTable[i];
+  if(i === 0 ) {
+    addHeaders(table, Object.keys(child));
+  }
+  var row = table.insertRow();
+  Object.keys(child).forEach(function(k) {
+    console.log(k);
+    var cell = row.insertCell();
+    cell.appendChild(document.createTextNode(child[k]));
+  })
 }
 
-
-
-
-$.getJSON( "cum_EVMetrics.json", function(data) {
-  console.log(data);
-  loadData(data);
-});
-
-
-function loadData(cum_periodTable){
-
-}
-
-$.getJSON( "period_EVMetrics.json", function(data) {
-  console.log(data);
-  loadData(data);
-});
+document.getElementById('cum_DataTable').appendChild(table);
