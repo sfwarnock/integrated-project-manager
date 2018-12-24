@@ -25,14 +25,14 @@ var cum_DataTable = {
     }
 }
 
-var bcws = document.getElementById('bcws');
-bcws.textContent = Object.keys(cum_DataTable)[0];
+var periodBCWP = document.getElementById('tableBCWP');
+periodBCWP.textContent = Object.keys(cum_DataTable)[0];
 
-var bcws = document.getElementById('bcwp');
-bcws.textContent = Object.keys(cum_DataTable)[1];
+var periodBCWS = document.getElementById('tableBCWS');
+periodBCWS.textContent = Object.keys(cum_DataTable)[1];
 
-var bcws = document.getElementById('acwp');
-bcws.textContent = Object.keys(cum_DataTable)[2];
+var tableACWP = document.getElementById('tableACWP');
+tableACWP.textContent = Object.keys(cum_DataTable)[2];
 
 
 console.log(Object.values(cum_DataTable));
