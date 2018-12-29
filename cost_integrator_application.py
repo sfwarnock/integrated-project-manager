@@ -50,6 +50,9 @@ def csv_Read():
     csv_header = csv_DataFrame.columns.values.tolist()
     dateHeaderValues = csv_DataFrame.columns.values[6:].tolist()
     
+    with open('dateTableValues.json', 'w') as outfile:
+        json.dump(dateHeaderValues, outfile, sort_keys = True, indent = 4, ensure_ascii=False)
+    
     assert len(dateHeaderValues) != 0; "No values in 'dateHeaderValues' list."
     
     return csv_DataFrame, csv_header, dateHeaderValues
