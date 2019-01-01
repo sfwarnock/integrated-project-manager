@@ -159,10 +159,12 @@ td{
 
 #button {
   border: 1px;
-  border-radius: 25px;
+  border-radius: 0px;
   background-color: white;
   height: 25px;
-  width: 50px;
+  width: 200px;
+  color: black;
+  position: relative;
 }
 
 #button:hover{
