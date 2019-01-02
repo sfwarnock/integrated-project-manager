@@ -159,7 +159,7 @@ td{
 
 #button {
   border: 1px;
-  border-radius: 0px;
+  border-radius: 3px;
   background-color: white;
   height: 25px;
   width: 200px;
@@ -174,11 +174,13 @@ td{
 
 #monthButton {
   border: 1px;
-  border-radius: 0px;
+  border-radius: 3px;
   background-color: white;
   height: 25px;
-  width: 200px;
+  width: 60px;
   color: black;
+  text-align: center;
+  font-size: 10px;
   position: relative;
 }
 
@@ -186,6 +188,24 @@ td{
   background-color: black;
   color: white;
 }
+
+#yearButton {
+  border: 1px;
+  border-radius: 3px;
+  background-color: white;
+  height: 25px;
+  width: 60px;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+}
+
+#yearhButton:hover{
+  background-color: black;
+  color: white;
+}
+
 
 #p_one p{
   font-size: 30px;
