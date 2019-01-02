@@ -240,6 +240,23 @@ td{
   color: white;
 }
 
+#controlAccountButton {
+  border: 1px;
+  border-radius: 3px;
+  background-color: white;
+  height: 25px;
+  width: 100px;
+  color: black;
+  text-align: center;
+  font-size: 10px;
+  position: relative;
+}
+
+#controlAccountButton:hover{
+  background-color: black;
+  color: white;
+}
+
 #p_one p{
   font-size: 30px;
   text-align: center;
