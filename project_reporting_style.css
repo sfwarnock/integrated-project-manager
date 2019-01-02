@@ -218,7 +218,7 @@ td{
   position: relative;
 }
 
-#yearhButton:hover{
+#yearButton:hover{
   background-color: black;
   color: white;
 }
@@ -245,7 +245,7 @@ td{
   border-radius: 3px;
   background-color: white;
   height: 25px;
-  width: 100px;
+  width: 150px;
   color: black;
   text-align: center;
   font-size: 10px;
