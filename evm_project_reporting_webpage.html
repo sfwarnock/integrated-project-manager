@@ -13,14 +13,14 @@
       <h1>Project Cost and Schedule Peformance</h1>
     </div>
 
-    <div class="topnav">
+<!--   <div class="topnav">
       <a href="#">Project Initiation</a>
       <a href="#">Project Planning</a>
       <a href="#">Design Engineering</a>
       <a href="#">Engineering Support, Construction, Procurement</a>
       <a href="#">Startup & Commissioning</a>
       <a href="#">Transition to Operations</a>
-    </div>
+    </div>-->
 
     <div class="topnav">
       <a href="#">Project Lifecycle</a>
@@ -28,11 +28,12 @@
       <a href="#">Engineering Managment</a>
       <a href="#">Procurement Engineering</a>
       <a href="#">Construction Engineering</a>
-      <a href="evm_project_reporting_webpage.html">Project Controls and Project Reporting</a>
+      <a href="evm_project_reporting_webpage.html">Project Controls</a>
       <a href="#">Configuration Management</a>
       <a href="#">Risk Management</a>
       <a href="budget_and_finance_webpage.html">Budget and Finance</a>
       <a href="#">Document Control</a>
+    </div>
     </div>
 
     <div class="row">
@@ -123,9 +124,13 @@
         <div class="card"><div style="margin: 0 auto; text-align: center;">
           <input id="button" type="button" value="Cumulative"/>
           <input id="button" type="button" value="Dual-axis"/>
+          <input id="button" type="button" value="Side-by-Side"/>
           <input id="button" type="button" value="Period"/>
           <p></p>
-          <img src = "s-curve.png" class = "responsive">
+          <div class="column">
+          <img src = "s-curve.png" class = "responsive"></div>
+          <div class="column">
+          <img src = "bar-chart.png" class = "responsive"></div>
           <p></p>
           <table>
             <tr id='table-1'>
@@ -144,13 +149,7 @@
               <td id='tableACWP'></td>
             </tr>
           </table>
-        </div>
-        </div>
-
-        <div class="card">
-          <h2>Period Earned Value Metrics</h2>
-          <img src = "bar-chart.png" class = "responsive">
-          <p>Period Earned Value Metrics</p>
+          <p></p>
           <table>
             <tr id='table-1'>
                 <th colspan="9">Project Earned Value To-date</th>
@@ -170,6 +169,7 @@
           </table>
         </div>
       </div>
+    </div>
 
     <div class="rightcolumn">
       <div class="column">
