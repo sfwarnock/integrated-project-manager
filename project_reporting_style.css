@@ -253,8 +253,8 @@ td{
 }
 
 #controlAccountButton:hover{
-  background-color: black;
-  color: white;
+  background-color: rgb(124, 124,124);
+  color: black;
 }
 
 #p_one p{
