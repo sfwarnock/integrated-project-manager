@@ -165,11 +165,13 @@ td{
   width: 200px;
   color: black;
   position: relative;
+  font-weight: bold;
 }
 
 #button:hover{
-  background-color: black;
+  background-color: rgb(124, 124,124);
   color: white;
+  font-weight: bold;
 }
 
 #monthButton {
@@ -180,13 +182,15 @@ td{
   width: 47px;
   color: black;
   text-align: center;
+  font-weight: bold;
   font-size: 8px;
   position: relative;
 }
 
 #monthButton:hover{
-  background-color: black;
+  background-color: rgb(124, 124,124);
   color: white;
+  font-weight: bold;
 }
 
 #yearButton {
@@ -197,13 +201,15 @@ td{
   width: 150px;
   color: black;
   text-align: center;
+  font-weight: bold;
   font-size: 10px;
   position: relative;
 }
 
 #yearhButton:hover{
-  background-color: black;
+  background-color: rgb(124, 124,124);
   color: white;
+  font-weight: bold;
 }
 
 #yearButton {
@@ -214,13 +220,15 @@ td{
   width: 150px;
   color: black;
   text-align: center;
+  font-weight: bold;
   font-size: 10px;
   position: relative;
 }
 
 #yearButton:hover{
-  background-color: black;
+  background-color: rgb(124, 124,124);
   color: white;
+  font-weight: bold;
 }
 
 #camButton {
@@ -231,13 +239,15 @@ td{
   width: 100px;
   color: black;
   text-align: center;
+  font-weight: bold;
   font-size: 10px;
   position: relative;
 }
 
 #camButton:hover{
-  background-color: black;
+  background-color: rgb(124, 124,124);
   color: white;
+  font-weight: bold;
 }
 
 #controlAccountButton {
