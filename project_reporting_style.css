@@ -174,20 +174,26 @@ td{
   font-weight: bold;
 }
 
-#monthButton {
-  border: 1px;
-  border-radius: 3px;
+.monthButton-group button{
   background-color: white;
-  height: 25px;
-  width: 47px;
+  border: 1px;
   color: black;
-  text-align: center;
-  font-weight: bold;
-  font-size: 8px;
-  position: relative;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  }
+
+.monthButton-group:after{
+  content: "";
+  clear:both;
+  display: table;
 }
 
-#monthButton:hover{
+.monthButton-group button:not(last-child){
+  border-right: none;
+}
+
+.monthButton-group button:hover{
   background-color: rgb(124, 124,124);
   color: white;
   font-weight: bold;
