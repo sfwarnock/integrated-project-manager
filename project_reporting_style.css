@@ -187,8 +187,7 @@ td{
 
 .monthButton-group button{
   background-color: #88BDBC;
-  border: 5px;
-  border-color: black;
+  border: 1px solid #4F4A41;
   color: black;
   padding: 10px;
   text-align: center;
