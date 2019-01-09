@@ -213,58 +213,57 @@ td{
   font-weight: bold;
 }
 
-#yearButton {
-  border: 1px;
-  border-radius: 3px;
-  background-color: white;
-  height: 25px;
-  width: 150px;
+.yearButton-group button{
+  background-color: #88BDBC;
+  border: 1px solid #4F4A41;
   color: black;
+  padding: 10px;
   text-align: center;
+  cursor: pointer;
+  float: left;
+  display: table-cell;
   font-weight: bold;
-  font-size: 10px;
-  position: relative;
+  }
+
+.yearButton-group:after{
+  content: "";
+  clear:both;
+  display: table;
 }
 
-#yearhButton:hover{
+.yearButton-group button:not(last-child){
+  border-right: none;
+}
+
+.yearButton-group button:hover{
   background-color: rgb(124, 124,124);
   color: white;
   font-weight: bold;
 }
 
-#yearButton {
-  border: 1px;
-  border-radius: 3px;
-  background-color: white;
-  height: 25px;
-  width: 150px;
+.camButton-group button{
+  background-color: #88BDBC;
+  border: 1px solid #4F4A41;
   color: black;
+  padding: 10px;
   text-align: center;
+  cursor: pointer;
+  float: left;
+  display: table-cell;
   font-weight: bold;
-  font-size: 10px;
-  position: relative;
+  }
+
+.camButton-group:after{
+  content: "";
+  clear:both;
+  display: table;
 }
 
-#yearButton:hover{
-  background-color: rgb(124, 124,124);
-  color: white;
-  font-weight: bold;
+.camButton-group button:not(last-child){
+  border-right: none;
 }
 
-#camButton {
-  border: 1px;
-  border-radius: 3px;
-  background-color: white;
-  height: 25px;
-  width: 100px;
-  color: black;
-  text-align: center;
-  font-weight: bold;
-  font-size: 10px;
-  position: relative;
-}
-
-#camButton:hover{
+.camButton-group button:hover{
   background-color: rgb(124, 124,124);
   color: white;
   font-weight: bold;
