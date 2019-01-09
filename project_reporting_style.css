@@ -168,18 +168,28 @@ td{
   width: 400px;
 }
 
-#button {
-  border: 1px;
-  border-radius: 3px;
-  background-color: white;
-  height: 25px;
-  width: 200px;
+.graphsButton-group button{
+  background-color: #88BDBC;
+  border: 1px solid #4F4A41;
   color: black;
-  position: relative;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: table-cell;
   font-weight: bold;
+  }
+
+.graphsButton-group:after{
+  content: "";
+  clear:both;
+  display: table;
 }
 
-#button:hover{
+.graphsButton-group button:not(last-child){
+  border-right: none;
+}
+
+.graphsButton-group button:hover{
   background-color: rgb(124, 124,124);
   color: white;
   font-weight: bold;
@@ -192,7 +202,6 @@ td{
   padding: 10px;
   text-align: center;
   cursor: pointer;
-  float: left;
   display: table-cell;
   font-weight: bold;
   }
@@ -221,14 +230,14 @@ td{
   text-align: center;
   cursor: pointer;
   float: left;
-  display: table-cell;
+  display: block;
   font-weight: bold;
   }
 
 .yearButton-group:after{
   content: "";
   clear:both;
-  display: table;
+  display: block;
 }
 
 .yearButton-group button:not(last-child){
@@ -248,7 +257,6 @@ td{
   padding: 10px;
   text-align: center;
   cursor: pointer;
-  float: left;
   display: table-cell;
   font-weight: bold;
   }
@@ -269,24 +277,34 @@ td{
   font-weight: bold;
 }
 
-#controlAccountButton {
-  border: 1px;
-  border-radius: 3px;
-  background-color: white;
-  height: 25px;
-  width: 150px;
+.controlAccountButton-group button{
+  background-color: #88BDBC;
+  border: 1px solid #4F4A41;
   color: black;
-  font-weight: bold;
+  padding: 10px;
   text-align: center;
-  font-size: 10px;
-  position: relative;
+  cursor: pointer;
+  float: left;
+  display: block;
+  font-weight: bold;
+  }
+
+.controlAccountButton-group:after{
+  content: "";
+  clear:both;
+  display: table;
 }
 
-#controlAccountButton:hover{
+.controlAccountButton-group button:not(last-child){
+  border-right: none;
+}
+
+.controlAccountButton-group button:hover{
   background-color: rgb(124, 124,124);
   color: white;
   font-weight: bold;
 }
+
 
 #p_one p{
   font-size: 30px;
