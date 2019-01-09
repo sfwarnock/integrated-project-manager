@@ -121,16 +121,19 @@
     </div>
 
         <div class="card"><div style="margin: 0 auto; text-align: center;">
-          <input id="button" type="button" value="Cumulative"/>
-          <input id="button" type="button" value="Dual-axis"/>
-          <input id="button" type="button" value="Side-by-Side"/>
-          <input id="button" type="button" value="Period"/>
+          <div class = "graphsButton-group" style="width:100%">
+            <p>Select Graph</p>
+            <button style="width:25%">Cumulative</button>
+            <button style="width:25%">Period</button>
+            <button style="width:25%">Side-by-Side</button>
+            <button style="width:25%">Dual-axis</button>
+          </div>
           <p></p>
           <div class="column">
           <img src = "s-curve.png" class = "responsive"></div>
           <div class="column">
           <img src = "bar-chart.png" class = "responsive"></div>
-          <p></p>
+          <br>
           <table>
             <tr id='table-1'>
                 <th colspan="9">Project Performance To-date by Month</th>
@@ -211,20 +214,23 @@
     <div class="rightcolumn">
       <div class="card">
         <h3>Monthly Variance Reports</h3><div style="margin: 0 auto; text-align: center;">
-        <p>Select Control Accoutn Manager (CAM)</p>
         <div class = "camButton-group" style="width:100%">
-          <button style="width:25%">2017</button>
-          <button style="width:25%">2018</button>
-          <button style="width:25%">2019</button>
-          <button style="width:25%">2020</button>
-        <p>Select Year</p>
+          <p>Select Control Account Manager (CAM)</p>
+          <button style="width:20%">CAM Name</button>
+          <button style="width:20%">CAM Name</button>
+          <button style="width:20%">CAM Name</button>
+          <button style="width:20%">CAM Name</button>
+          <button style="width:20%">CAM Name</button>
+        </div>
         <div class = "yearButton-group" style="width:100%">
+          <p>Select Year</p>
           <button style="width:25%">2017</button>
           <button style="width:25%">2018</button>
           <button style="width:25%">2019</button>
           <button style="width:25%">2020</button>
-        <p>Select Month</p>
+        </div>
         <div class = "monthButton-group" style="width:100%">
+          <p>Select Month</p>
           <button style="width:8.3%">Jan</button>
           <button style="width:8.3%">Feb</button>
           <button style="width:8.3%">Mar</button>
@@ -237,13 +243,15 @@
           <button style="width:8.3%">Oct</button>
           <button style="width:8.3%">Nov</button>
           <button style="width:8.3%">Dec</button>
+      </div>
+        <div class = "monthButton-group" style="width:100%">
+          <p>Select Control Account</p>
+          <button style="width:33%">Account Name</button>
+          <button style="width:33%">Account Name</button>
+          <button style="width:33%">Account Name</button>
         </div>
-        <p>Select Control Account</p>
-        <input id="controlAccountButton" type="button" value="Control Account"/>
-        <input id="controlAccountButton" type="button" value="Control Account"/>
-        <input id="controlAccountButton" type="button" value="Control Account"/>
-        <p></p>
         </div>
+      </div>
       </div>
     </div>
   </div>
