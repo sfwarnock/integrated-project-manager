@@ -1,0 +1,3 @@
+graphButton.onclick = function graphChange(){
+  
+}
