@@ -123,14 +123,15 @@
         <div class="card"><div style="margin: 0 auto; text-align: center;">
           <div class = "graphsButton-group" style="width:100%">
             <p>Select Graph</p>
-            <button onclick="graphChange()" style="width:25%">Cumulative</button>
-            <button style="width:25%">Period</button>
+            <button id="projectSCurve" onclick="graphChange()" value='Test 1' style="width:25%">Cumulative</button>
+            <button id="periodBar" onclick="graphChange()" value='Test 2' style="width:25%">Period</button>
             <button style="width:25%">Side-by-Side</button>
             <button style="width:25%">Dual-axis</button>
           </div>
           <br>
           <div class="column">
-            <div id='projectSCurve' class = "responsive"></div>
+            <p id='scurve_graph'></p>
+            <p id='period_graph'></p>
           </div>
           <div class="column">
           <img src = "bar-chart.png" class = "responsive"></div>
