@@ -1,4 +1,4 @@
 function graphChange()
 {
-  var cum = document.getElementById('projectSCurve').src="s-curve.png";
+  document.getElementById('projectSCurve').src="s-curve.png";
 }
