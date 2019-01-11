@@ -1,4 +1,6 @@
 function graphChange()
 {
-  document.getElementById('projectSCurve').src="s-curve.png";
+  var scurve = document.getElementById('projectSCurve');
+  projectSCurve.src = "s-curve.png";
+  document.body.appendChild(projectSCurve);
 }
