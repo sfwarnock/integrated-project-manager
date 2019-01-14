@@ -5,4 +5,7 @@ function graphChange()
 
   var periodBar = document.getElementById('periodBar').value;
   document.getElementById("period_graph").innerHTML = periodBar
+
+  var sideByside = document.getElementById('sideByside').value;
+  document.getElementById("sideByside_graph").innerHTML = periodBar
 }
