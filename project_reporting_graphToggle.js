@@ -8,4 +8,7 @@ function graphChange()
 
   var sideByside = document.getElementById('sideByside').value;
   document.getElementById("sideByside_graph").innerHTML = periodBar
+
+  var dualAxis = document.getElementById('dualAxis').value;
+  document.getElementById("dualAxis_graph").innerHTML = periodBar
 }
