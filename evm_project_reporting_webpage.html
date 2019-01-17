@@ -123,20 +123,18 @@
         <div class="card"><div style="margin: 0 auto; text-align: center;">
           <div class = "graphsButton-group" style="width:100%">
             <p>Select Graph</p>
-            <button onclick="graphButtons()" style="width:25%">Cumulative</button>
-            <button id="periodBar" onclick="graphButtons()" style="width:25%">Period</button>
-            <button id="sideByside" onclick="graphButtons()" value='Test 3' style="width:25%">Side-by-Side</button>
-            <button id="dualAxis" onclick="graphButtons()" value='Test 4' style="width:25%">Dual-axis</button>
+            <button onclick="graphButtons()" id='sCurve' style="width:25%"S>Cumulative</button>
+            <button onclick="graphButtons()" id='bar-chart' style="width:25%">Period</button>
+            <button onclick="graphButtons()" id="sideByside" style="width:25%">Side-by-Side</button>
+            <button onclick="graphButtons()" id="dualAxis" style="width:25%">Dual-axis</button>
           </div>
           <br>
           <div class="column">
-            <img id='s-curve'>
-            <p id='period_graph'></p>
-            <p id='sideByside_graph'></p>
-            <p id='dualAxis_graph'></p>
+            <img id='sCurve' src="" class = "responsive">
+            <img id='barChart' src="" class = "responsive">
+            <img id='sideByside_graph' src="" class = "responsive">
+            <img id='dualAxis_graph' src="" class = "responsive">
           </div>
-          <div class="column">
-          <img src = "bar-chart.png" class = "responsive"></div>
           <br>
           <table>
             <tr id='table-1'>
