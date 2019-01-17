@@ -1,4 +1,3 @@
-function graphButtons()
-{
-  document.getElementByID("s-curve").innerHTML="<img src='s-curve.png'/>";
+function graphButtons(element){
+  document.getElementByID("s-curve").src = element;
 }
