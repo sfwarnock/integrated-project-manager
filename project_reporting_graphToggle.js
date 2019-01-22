@@ -1,7 +1,8 @@
 function graphButtons(){
-  document.getElementById('sCurve').src = 's-curve.png';
 
-  document.getElementById('barChart').src = 'bar-chart.png';
+  var sCurve = document.getElementById('sCurve').src = 's-curve.png';
 
-  document.getElementById('sideByside_graph').src = ['s-curve.png', 'bar-chart.png'];
+  var barChart = document.getElementById('barChart').src = 'bar-chart.png';
+
+  var sideBySide = document.getElementById('sideByside').src = ['s-curve.png', 'bar-chart.png'];
 }
