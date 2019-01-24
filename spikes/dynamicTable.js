@@ -10,6 +10,15 @@ var datatable = {
 
 var dataValues = dataObj["1"];
 
-for (var i dataValue) {
-  
+for (var i dataValues) {
+  var table = document.getElementById("table");
+  var tableRow = document.createElement("tr");
+  var tableData = document.createElement("td");
+
+  for (var key in dataValues[i]){
+    var txt = document.createTextNode(key);
+    td.appendChild(txt);
+    tr.appendChild(td);
+  }
+  table.appendChild(tr);
 }
