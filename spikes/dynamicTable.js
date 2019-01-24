@@ -8,8 +8,8 @@ var datatable = {
         "18-May": 106200.0
 };
 
-var tableCum = document.createElement("table");
-var tableCumRow = document.createElement("tableRow");
-  tableCum.appendChild(tableRowElement);
+var dataValues = dataObj["1"];
 
-var showTable = document.getElementById("showTable");
+for (var i dataValue) {
+  
+}
