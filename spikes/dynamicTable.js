@@ -29,7 +29,7 @@ var jsonData [
 
 function generateTable(){
 
-  var noData = jsonData.length;
+  var cumData = jsonData.length;
 
   if(noData>0){
     var table = document.createElement("table");
@@ -37,5 +37,29 @@ function generateTable(){
     table.setAttibute('border', '1');
     table.setAttibute('cellspacing', '0');
     table.setAttibute('cellpadding', '5');
+
+    var col = [];
+    for (var i = 0; i < cumData; i++){
+      for (var key in jsonData[i]){
+        if (col.indexOf(key) === -1){
+          col.push(key);
+        }
+      }
+    }
+
+    var tableHeader = document.createElement("tableHead");
+    var tabbleRow = document.createElement("tableRow");
+
+    for (var i = 0; i < col.length; i++){
+      var th = document.createElement("th");
+      th.innnerHTML = col[i];
+      tableRow.appendChild(th);
+    }
+    tableHeader.appendChild(tableRow);
+    table.appendChild(tableHeader);
+
+    var divContainer = document.getElementById("cumDataTable");
+    divContainer.innnerHTML = "";
+    divContainer.appendChild(table);
   }
 }
