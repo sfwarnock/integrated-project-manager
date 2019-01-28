@@ -59,17 +59,17 @@ body {
     background-color: #ddd;
 }
 
-/* Style the topnav links */
 .bottomnav a {
-    float: left;
-    display: block;
+  float:none;
+    display: inline-block;
+    list-style-type: none;
+    justify-content: center;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px;
     text-decoration: none;
 }
 
-/* Change color on hover */
 .bottomnav a:hover {
     background-color: #ddd;
     color: black;
