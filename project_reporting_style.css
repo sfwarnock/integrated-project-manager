@@ -53,6 +53,28 @@ body {
     color: black;
 }
 
+
+.bottomnav {
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+/* Style the topnav links */
+.bottomnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.bottomnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
 .column {
   float: left;
   width: 50%;
