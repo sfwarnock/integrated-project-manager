@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 /* Color Scheme
 
 #88BDBC
@@ -12,6 +8,10 @@
 #132226
 #A4978E
 */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial;
@@ -76,9 +76,8 @@ body {
     color: black;
 }
 
-.topnav a.active-page{
-  background-color: #B5C1B4;
-}
+
+
 
 .column {
   float: left;
@@ -128,29 +127,14 @@ body {
 
 /* Footer */
 .footer {
-    padding: 20px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
     text-align: center;
-    background: #ddd;
-    margin-top: 20px;
+    background: #254E58;
+    margin-top: 5px;
 }
 
 .tableheaderevm{
   text-align: center;
   border: 1px solid black;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-    .topnav a {
-        float: none;
-        width: 100%;
-    }
 }
