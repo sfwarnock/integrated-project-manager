@@ -55,7 +55,8 @@ body {
 
 
 .bottomnav {
-    overflow: hidden;
+    justify-content: center;
+    display: flex;
     background-color: #B5C1B4;
 }
 
@@ -75,7 +76,7 @@ body {
     color: black;
 }
 
-#activebar a.active-page{
+.topnav a.active-page{
   background-color: #B5C1B4;
 }
 
