@@ -8,42 +8,43 @@
 #132226
 #A4978E
 */
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 10px;
-    font-family: Arial;
-    background: #6E6658;
+  font-family: 'Pavanam', sans-serif;
+  font-size: 15px;
+  background: rgb(255, 255, 255);
 }
 
-/* Header/Blog Title */
 .header {
-    padding: 10px;
-    text-align: center;
-    background-color: #254E58;
-    color: rgb(255, 255, 255);
+    margin: auto;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
 }
 
 .header h1 {
-    font-size: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
 }
 
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #112D32;
+    background-color: #254E58;
 }
 
 /* Style the topnav links */
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
 }
 
@@ -53,11 +54,10 @@ body {
     color: black;
 }
 
-
 .bottomnav {
-    justify-content: center;
+    justify-content: left;
     display: flex;
-    background-color: #B5C1B4;
+    background-color: rgb(192, 192, 192);
 }
 
 .bottomnav a {
@@ -67,7 +67,7 @@ body {
     justify-content: center;
     color: black;
     text-align: center;
-    padding: 10px;
+    padding: 5px 10px;
     text-decoration: none;
 }
 
@@ -82,11 +82,11 @@ body {
 }
 
 .subnavbutton{
-  font-size: 16px;
+  font-size: 18px;
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 10px 10px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -96,7 +96,7 @@ body {
   display: none;
   padding: 10px;
   position: absolute;
-  background-color: #112D32;
+  background-color: rgb(105, 105, 105);
 }
 
 .subnav-content a {
@@ -107,8 +107,8 @@ body {
 }
 
 .subnav-content a:hover {
-  background-color: #eee;
-  color: black;
+  background-color: rgb(105, 105, 105);
+  color: rgb(255, 215, 0);
 }
 
 .subnav:hover .subnav-content {
@@ -130,7 +130,7 @@ body {
 .rightcolumn {
     float: left;
     width: 35%;
-    background-color: #6E6658;
+    background-color: rgb(255, 255, 255);
     padding-left: 5px;
 }
 
@@ -143,9 +143,9 @@ body {
 
 /* Add a card effect for articles */
 .card {
-    color: white;
-    background-color: #4F4A41;
-    padding: 10px;
+    color: black;
+    background-color: rgb(192, 192, 192);
+    padding: 5px;
     margin-top: 10px;
     border: 3px;
     border-color: black;
@@ -164,11 +164,11 @@ body {
 
 /* Footer */
 .footer {
-    padding: 10px;
     color: rgb(255, 255, 255);
     text-align: center;
     background: #254E58;
     margin-top: 5px;
+    padding: 10px;
 }
 
 .tableheaderevm{
