@@ -14,7 +14,24 @@
     </div>
 
     <div class="topnav">
-      <a href="#">Project Lifecycle</a>
+      <div class="dropdownlinks">
+        <button class = "dropButton" onclick="projectInitiationlinks()">Project Lifecycle</button>
+          <div class = "dropdownlinks-content" id="pIdropDownLink">
+            <a href="#">Project Initiation</a>
+            <a href="#">Project Planning</a>
+            <a href="#">Design Engineering</a>
+            <a href="#">Engineering Support, Construction, Procurement</a>
+            <a href="#">Startup & Commissioning</a>
+            <a href="#">Transition to Operations</a>
+          </div>
+        <button class = "dropButton" onclick="projectManagementlinks()">Project Management</button>
+          <div class = "dropdownlinks-content" id="pMdropDownLink">
+            <a href="#">Project Data Sheet</a>
+            <a href="#">Integrated Project Team</a>
+            <a href="#">Impact Logs</a>
+            <a href="#">TA-55 Escort Requests</a>
+          </div>
+        </div>
       <a href="#">Project Management</a>
       <a href="#">Engineering Managment</a>
       <a href="#">Procurement Engineering</a>
@@ -205,7 +222,7 @@
               <td>37,900.00</td>
               <td>79,800.00</td>
               <td>122,200.00</td>
-              <td>7,900143,600.00</td>
+              <td>43,600.00</td>
               <td>165,000.00</td>
               <td>190,400.00</td>
             </tr>
@@ -320,6 +337,7 @@
     </div>
     <script type="text/javascript" src="reportingMetrics.js"></script>
     <script type="text/javascript" src="EVMetricsTables.js"></script>
+    <script type="text/javascript" src="ui_allpages_layout.js"></script>
     <script type="text/javascript" src="project_reporting_graphToggle.js"></script>
   </body>
 </html>
