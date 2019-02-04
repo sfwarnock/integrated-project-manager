@@ -27,12 +27,23 @@ window.onclick = function(e) {
 
 window.onscroll = function() {stickyNav()};
 
-var navBar = document.getElementById("navBar");
+var topnav = document.getElementById("topnav");
 
 function stickyNav)(){
   if (window.pageYOffset >= sticky){
-    navBar.classlist.add("sticky"){
+    topnav.classlist.add("sticky"){
   } else{
-    navBar.classtList.remove("sticky")
+    topnav.classtList.remove("sticky")
   }
+}
+
+var header = document.getElementById("subnav");
+var button = document.getElementByClassName("subnavbutton");
+
+for ( var i = 0; i < button.length; i++){
+  button[i].addEventLister("click", function(){
+    var current = document.getElementByClassName("active");
+    current[0].classname = current[0].className.replace(" active", "");
+    this.classname += " active";
+  })
 }
