@@ -116,6 +116,20 @@ body {
 }
 
 
+.content {
+  padding: 10px;
+}
+
+.stickyNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.stickyNav + .content{
+  padding: 60px;
+}
+
 .column {
   float: left;
   width: 50%;
