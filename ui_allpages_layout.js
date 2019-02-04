@@ -23,3 +23,16 @@ window.onclick = function(e) {
     }
   }
 }
+
+
+window.onscroll = function() {stickyNav()};
+
+var navBar = document.getElementById("navBar");
+
+function stickyNav)(){
+  if (window.pageYOffset >= sticky){
+    navBar.classlist.add("sticky"){
+  } else{
+    navBar.classtList.remove("sticky")
+  }
+}
