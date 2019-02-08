@@ -29,17 +29,20 @@ var jsonData [
 
 var keys = [];
 
-document.write("<table border==\"1\"><tr>");
-for (key in jsonData[0]){
-  document.wrtie('<td>' + key + '<td>');
-}
 
-document.write("</tr>");
-for (var i = 0; i < jsonData.length; i++) {
-  document.write('<tr>');
-  for (key in jsonData[i]){
-    document.write('<td>' + jsonData[i][key] + '</td>');
+function cumTable(){
+  document.write("<table border==\"1\"><tr>");
+  for (key in jsonData[0]){
+    document.wrtie('<td>' + key + '<td>');
   }
-  document.write('</tr>');
+
+  document.write("</tr>");
+  for (var i = 0; i < jsonData.length; i++) {
+    document.write('<tr>');
+    for (key in jsonData[i]){
+      document.write('<td>' + jsonData[i][key] + '</td>');
+    }
+    document.write('</tr>');
+  }
+  document.write("table");
 }
-document.write("table");
