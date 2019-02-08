@@ -36,5 +36,10 @@ for (key in jsonData[0]){
 
 document.write("</tr>");
 for (var i = 0; i < jsonData.length; i++) {
-  
+  document.write('<tr>');
+  for (key in jsonData[i]){
+    document.write('<td>' + jsonData[i][key] + '</td>');
+  }
+  document.write('</tr>');
 }
+document.write("table");
